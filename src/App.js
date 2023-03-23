@@ -3,10 +3,12 @@ import Article from "./pages/Article";
 import ArticlesList from "./pages/ArticlesList";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <Router>
+      <NavBar />
       <div className="max-wscreen-md max-auto pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
