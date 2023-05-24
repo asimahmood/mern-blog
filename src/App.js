@@ -4,6 +4,7 @@ import ArticlesList from "./pages/ArticlesList";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import NavBar from "./components/NavBar";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/article/:name" element={<Article />} />
           <Route path="/article-list" element={<ArticlesList />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
